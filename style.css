@@ -1,0 +1,128 @@
+:root {
+  --blue1: #06142e;
+  --blue2: #0b2a5a;
+  --blue3: #1f4e8c;
+  --blue4: #2f6fda;
+
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --border: #d0d7de;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--blue1);
+  color: white;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: var(--blue2);
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px 18px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background: var(--blue3);
+}
+main {
+  padding: 20px;
+}
+
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h2 {
+  color: var(--blue3);
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #e8f0ff;
+}
+
+tr:hover {
+  background: #f3f7ff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--blue3);
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background: var(--blue2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--blue3);
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: var(--blue1);
+  color: white;
+  margin-top: 20px;
+}
